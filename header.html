@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr">
+	<head>
+		<title>File list</title>
+		<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+		<link href="/design/css/global.css" rel="stylesheet" type="text/css" title="defaut" />
+	</head>
+	<body>
+		<h1>File list</h1>
+		<div id="content">
+			<h2>Options</h2>
+			<form action="" method="get">
+				<div class="border">
+					<label>Display style : 
+						<select name="F">
+							<option value="0">Plain</option>
+							<option value="1" selected="selected">Fancy</option>
+							<option value="2">Table</option>
+						</select>
+					</label>
+					<label>Sorted by : 
+						<select name="C">
+							<option value="N" selected="selected">File name</option>
+							<option value="M">Modification date</option>
+							<option value="S">Size</option>
+							<option value="D">Description</option>
+						</select>
+					</label>
+					<label> 
+						<select name="O">
+							<option value="A" selected="selected">Ascending</option>
+							<option value="D">Descending</option>
+						</select>
+					</label>
+					<label>Order : 
+						<select name="V">
+							<option value="0" selected="selected">Normal</option>
+							<option value="1">Version</option>
+						</select>
+					</label>
+					<br style="margin: 10px;"/>
+					<label>Search : 
+						<input type="text" name="P" value="*" />
+					</label>
+					<br />
+					<input class="bouton" type="submit" value="Validate" name="X" />
+					<br />
+				</div>
+			</form>
+			<h2>Folder content</h2>
+			<div class="content">
