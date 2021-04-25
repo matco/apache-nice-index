@@ -1,0 +1,145 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+/***global***/
+* {
+	color: #2a4a70;
+}
+body {
+	font-family: 'Open Sans', sans-serif;
+	background-color: #0d131f;
+	background-image: repeating-linear-gradient(-45deg, transparent, transparent 3px, #1B252E 3px, #1B252E 4px);
+	max-width: 70rem; /* text should not be too wide, otherwise it becomes hard to read */
+	margin: 0 auto;
+	padding: 0 1rem;
+}
+
+/***generic containers***/
+div, span {
+	margin: 0;
+	padding: 0;
+}
+
+/***text***/
+pre {
+	margin: 0;
+	padding: 0 1rem 1rem 1rem;
+	overflow: auto;
+}
+
+/***separators***/
+br {
+	margin-bottom: 0.6rem;
+}
+hr {
+	height: 1px;
+	border: 0;
+	border-top: #0d131f solid 1px;
+}
+
+/***titles***/
+h1, h2 {
+	margin: 0;
+	padding: 0;
+}
+h1 {
+	font-size: 1.8rem;
+	color: #494949;
+	padding: 1rem 0;
+}
+h2 {
+	clear: both;
+	font-size: 1.2rem;
+	color: #556b85;
+	padding: 0.5rem;
+	background-color: #bdcbe3;
+	background-image: linear-gradient(to bottom, #7fa0c7, #d8e1ef 1px, #bdcbe3 50%, #b1c1de);
+}
+
+/***lists***/
+ul {
+	list-style: none;
+	padding: 0.8rem;
+}
+li {
+	margin-bottom: 0.5rem;
+}
+
+/***links***/
+a, a:link, a:active, a:visited {
+	text-decoration: none;
+	color: #494949;
+}
+a:hover {
+	color: #7195c1;
+}
+
+/***tables***/
+table {
+	background-color: #fff;
+	border: 0;
+	margin: 0;
+	padding: 1rem;
+	width: 100%;
+}
+tr {
+	border: 1px dotted #fff;
+}
+tr:nth-child(even):not(:first-child):not(:nth-child(2)):not(:last-child) {
+	background-color: #f5f5ff;
+}
+tr:nth-child(odd):not(:first-child):not(:last-child) {
+	background-color: #fff;
+}
+
+/***forms***/
+form {
+	background: #f5f5ff;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+input, select {
+	color: #7195c1;
+	background-color: white;
+	border: 1px solid #7195c1;
+	border-radius: 2px;
+	padding: 0.1rem;
+}
+input:hover, select:hover {
+	border: 1px solid #7195c1;
+}
+input:focus, select:focus {
+	background-color: #f2f2ff;
+	border: 1px solid #7195c1;
+}
+input:-moz-placeholder {
+	color: #ccc;
+}
+
+/***buttons***/
+input[type='submit'] {
+	border-radius: 2px;
+	background-color: #2e506a;
+	color: #f5f5ff !important;
+	padding: 0.2rem 0.8rem;
+	text-align: center;
+	border: 0;
+	cursor: pointer;
+}
+input[type='submit']:hover {
+	background-color: #396485;
+	box-shadow: 0 0 1px #396485;
+}
+
+/***content***/
+main {
+	background-color: #f5f5ff;
+}
+
+/***generic***/
+.border {
+	background-color: #fff;
+	border: 1px dotted #8eb0db;
+	margin: 1rem 2rem;
+	padding: 0.5rem 1rem;
+}
