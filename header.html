@@ -4,6 +4,22 @@
 		<meta charset="utf-8" />
 		<title>File list</title>
 		<link href="/autoindex/global.css" rel="stylesheet" type="text/css" title="default" />
+		<script type="text/javascript">
+			//<![CDATA[
+				window.addEventListener('load', () => {
+					//restore options
+					//retrieve interesting query parameters
+					const query = window.location.search.substring(1);
+					const parameters = query.split('&').map(p => p.split('=')).filter(p => p[0] !== 'X');
+					//restore form state
+					const form = document.querySelector('form');
+					parameters.forEach(parameter => {
+						const field = form[parameter[0]];
+						field.value = parameter[1];
+					});
+				});
+			//]]>
+		</script>
 	</head>
 	<body>
 		<h1>File list</h1>
