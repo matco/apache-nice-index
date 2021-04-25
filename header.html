@@ -10,15 +10,19 @@
 		<main>
 			<h2>Options</h2>
 			<form action="" method="get">
-				<div class="border">
-					<label>Display style:
+				<p>
+					<label>
+						Display style
 						<select name="F">
 							<option value="0">Plain</option>
 							<option value="1" selected="selected">Fancy</option>
 							<option value="2">Table</option>
 						</select>
 					</label>
-					<label>Sorted by:
+				</p>
+				<p>
+					<label>
+						Sorted by
 						<select name="C">
 							<option value="N" selected="selected">File name</option>
 							<option value="M">Modification date</option>
@@ -26,26 +30,23 @@
 							<option value="D">Description</option>
 						</select>
 					</label>
-					<label>
-						<select name="O">
-							<option value="A" selected="selected">Ascending</option>
-							<option value="D">Descending</option>
-						</select>
-					</label>
-					<label>Order:
-						<select name="V">
-							<option value="0" selected="selected">Normal</option>
-							<option value="1">Version</option>
-						</select>
-					</label>
-					<br style="margin: 10px;"/>
-					<label>Search:
+					<select name="O">
+						<option value="A" selected="selected">Ascending</option>
+						<option value="D">Descending</option>
+					</select>
+					<select name="V">
+						<option value="0" selected="selected">Normal order</option>
+						<option value="1">Version order</option>
+					</select>
+				</p>
+				<p>
+					<label>Search
 						<input type="text" name="P" value="*" />
 					</label>
-					<br />
-					<input class="bouton" type="submit" value="Validate" name="X" />
-					<br />
-				</div>
+				</p>
+				<p>
+					<input type="submit" value="Submit" name="X" />
+				</p>
 			</form>
 			<h2>Folder content</h2>
-			<div class="content">
+			<div>
