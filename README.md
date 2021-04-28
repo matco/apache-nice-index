@@ -43,3 +43,6 @@ You can customize the autoindex options using the `IndexOptions` parameter. The 
 ```
 
 You can check the Apache documentation [here](https://httpd.apache.org/docs/2.4/mod/mod_autoindex.html#indexoptions) to discover the available options.
+
+### Thanks
+The icons used in this project have been created by [Mark James](http://www.famfamfam.com/lab/icons/silk/).
