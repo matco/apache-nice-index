@@ -112,6 +112,12 @@ tr:nth-child(even):not(:first-child):not(:nth-child(2)):not(:nth-child(3)):not(:
 tr:nth-child(odd):not(:first-child):not(:nth-child(2)):not(:nth-child(3)):not(:last-child) {
 	background-color: #fff;
 }
+td {
+	vertical-align: middle;
+}
+td img {
+	padding-left: 0.2rem;
+}
 
 /***separators***/
 hr {
